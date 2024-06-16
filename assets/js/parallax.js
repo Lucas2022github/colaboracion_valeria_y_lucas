@@ -4,6 +4,8 @@ const Img3 = document.getElementById('img-3');
 const Img4 = document.getElementById('img-4');
 const Img5 = document.getElementById('img-5');
 const Img6 = document.getElementById('img-6');
+const cartel = document.getElementById('cartel');
+
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
@@ -14,5 +16,7 @@ window.addEventListener('scroll', () => {
     Img4.style.left = value * 1.5 + 'px';
     Img5.style.left = value * -1.5 + 'px';
     Img6.style.left = value * 1.5 + 'px';
+    cartel.style.bottom = value * -5.5 + 'px';
+
 
 });
