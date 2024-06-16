@@ -1,0 +1,96 @@
+/* Establecer el tamaño de la caja en todo el documento y aplicar desplazamiento suave */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* Establecer una fuente base */
+}
+
+/* Establecer el tamaño de la caja para todos los elementos y pseudo-elementos */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Eliminar márgenes y rellenos predeterminados */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Establecer un ancho completo para el cuerpo y prevenir el desplazamiento horizontal */
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+    /* Fondo base */
+    color: #333;
+    /* Color de texto base */
+    line-height: 1.6;
+    /* Espaciado de línea base */
+}
+
+/* Eliminar el estilo de lista y establecer el relleno de las listas no ordenadas */
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Estilo básico para los enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+:root {
+    --first-color: rgba(255, 255, 255, 1);
+    --second-color: rgba(58, 225, 213, .3);
+    --third-color: rgba(0, 141, 218, 1);
+    --fourth-color: rgba(88, 224, 167, 1);
+    --sixth-color: rgba(172, 226, 225, 1);
+    --bg-alpha-color: rgba(245, 245, 245, 0.75);
+
+}
+
+body {
+    margin: 0;
+}
+
+
+
+/* MENU---------------------------- */
+
+
+.section-home {
+    height: 100vh;
+    background-image: url(../parallax/background.png);
+}
+
+.section-home img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    /* max-height: 606px; */
+}
