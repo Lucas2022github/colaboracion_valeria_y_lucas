@@ -2,3 +2,18 @@
     height: 100vh;
     background-color: pink;
 }
+
+
+.section-sobre-mi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+}
+
+
+.fondo {
+    position: absolute;
+    z-index: 2;
+}
